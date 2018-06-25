@@ -1,0 +1,64 @@
+* {
+    box-sizing: border-box
+}
+
+body {
+    font-family: sans-serif;
+    font-size: 15px;
+    text-rendering: optimizeLegibility;
+    -moz-osx-font-smoothing: grayscale
+}
+
+
+.top {
+    flex: 1 0 auto;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+    padding-right: 40px;
+    padding-left: 40px;
+    margin-top: 40px
+}
+
+.bottom {
+    min-height: 180px;
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 100%
+}
+
+button {
+    border-radius: 6px;
+    border: 1px solid salmon;
+    height: 70px;
+    min-height: 55px;
+    text-transform: none;
+    font-size: 18px;
+    background: salmon;
+    color: white;
+    border: none;
+    font-weight: 500;
+    padding: 0;
+    width: 100%;
+    max-width: 75%;
+    display: block;
+    touch-action: manipulation;
+    cursor: pointer;
+    line-height: normal;
+    margin: 0;
+}
+
+@media only screen and (min-width:568px) { 
+    .top, .bottom, .button {
+      font-size: 30px;
+    }
+}
+
+@media only screen and (min-width:1024px) { 
+    .top, .bottom, .button {
+      font-size: 60px;
+    }
+}
